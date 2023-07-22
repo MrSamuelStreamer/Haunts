@@ -14,5 +14,6 @@
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>Ludeon.Rimworld.Ideology</li>
 		<li>brrainz.harmony</li>
+		<li>smartkar.athenaframework</li>
 	</loadAfter>
 </ModMetaData> 
