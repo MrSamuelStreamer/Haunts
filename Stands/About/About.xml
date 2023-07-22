@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Haunts!</name>
+	<author>Feldoh, Mr Samuel Streamer</author>
+	<description>A friendly haunting companion for your colonists as a boon to their skills, or malus for their crimes.</description>
+	<packageId>MrSamuelStreamer.Haunts</packageId>
+	<supportedVersions>
+	<li>1.4</li>
+	</supportedVersions>
+	<modDependencies>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.Rimworld.Ideology</li>
+		<li>brrainz.harmony</li>
+	</loadAfter>
+</ModMetaData> 
