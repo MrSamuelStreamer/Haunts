@@ -22,10 +22,12 @@
                 <graphicData>
                     <texPath>Haunts/Frog/Frog</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
-                    <drawOffsetSouth>(0, 0.8, 0.85)</drawOffsetSouth>
+                    <drawOffsetSouth>(0, 0.8, 2.25)</drawOffsetSouth>
                     <drawOffsetNorth>(0, -0.6, -0.85)</drawOffsetNorth>
                     <drawOffsetEast>(-0.8, -0.1, -0.35)</drawOffsetEast>
                     <drawOffsetWest>(0.8, 0.1, -0.35)</drawOffsetWest>
+                    <drawSize>(2.3,2.8)</drawSize>
+                    <shaderType>CutoutSkin</shaderType>
                 </graphicData>
                 <onlyRenderWhenDrafted>true</onlyRenderWhenDrafted>
             </li>
