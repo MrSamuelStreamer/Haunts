@@ -14,6 +14,11 @@
             <li>
                 <minSeverity>0</minSeverity>
                 <label>presence</label>
+                <statFactors>
+                    <RestFallRateFactor>0.8</RestFallRateFactor>
+                    <NegotiationAbility>1.2</NegotiationAbility>
+                    <WorkSpeedGlobal>0.9</WorkSpeedGlobal>
+                </statFactors>
             </li>
         </stages>
         <comps>
@@ -28,10 +33,10 @@
                             <shaderType>MoteGlow</shaderType>
                         </graphicData>ó
                         <offsets>
-                            <li>(0.3, 0.6, -0.55)</li> <!-- North -->
-                            <li>(-0.5, 0.1, -0.35)</li> <!-- East -->
-                            <li>(0.3, -0.6, 0.65)</li> <!-- South -->
-                            <li>(0.5, 0.1, -0.35)</li> <!-- West -->
+                            <li>(0.3, 1.6, -0.55)</li> <!-- North -->
+                            <li>(-0.5, 1.1, -0.35)</li> <!-- East -->
+                            <li>(0.3, -1.6, 0.65)</li> <!-- South -->
+                            <li>(0.5, 1.1, -0.35)</li> <!-- West -->
                         </offsets>
                         <onlyRenderWhenDrafted>true</onlyRenderWhenDrafted>
                     </li>
