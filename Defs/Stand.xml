@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
+    <!--Haunt Defs Begin-->
+    <!--Frog Def-->
     <HediffDef>
         <defName>Taggerung_FrogHaunt</defName>
         <label>Haunted by Frog</label>
@@ -23,7 +25,6 @@
         </stages>
         <comps>
             <li Class="AthenaFramework.HediffCompProperties_Renderable">
-                <attachedMoteDef>Mote_SanguophageMeetingSmoke</attachedMoteDef>
                 <additionalGraphics>
                     <li Class="AthenaFramework.HediffGraphicPackage">
                         <graphicData>
@@ -31,7 +32,7 @@
                             <graphicClass>Graphic_Multi</graphicClass>
                             <drawSize>1.7</drawSize>
                             <shaderType>MoteGlow</shaderType>
-                        </graphicData>ó
+                        </graphicData>
                         <offsets>
                             <li>(0.3, 1.6, -0.55)</li> <!-- North -->
                             <li>(-0.5, 1.1, -0.35)</li> <!-- East -->
@@ -44,7 +45,94 @@
             </li>
         </comps>
     </HediffDef>
-
+    <!--Grignr Def-->
+    <HediffDef>
+        <defName>Taggerung_GrignrHaunt</defName>
+        <label>Empowered by Grignr</label>
+        <description>Through some great feat of combat, this person has been chosen by the spirit of Grignr Grignrson.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.1,0.2,0.8)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <label>presence</label>
+                <statFactors>
+                    <Mass>1.5</Mass>
+                    <MeleeDamageFactor>1.2</MeleeDamageFactor>
+                    <MeleeDodgeChance>0.8</MeleeDodgeChance>
+                    <IncomingDamageFactor>0.8</IncomingDamageFactor>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+            <li Class="AthenaFramework.HediffCompProperties_Renderable">
+                <additionalGraphics>
+                    <li Class="AthenaFramework.HediffGraphicPackage">
+                        <graphicData>
+                            <texPath>Haunts/Grignr/Grignr</texPath>
+                            <graphicClass>Graphic_Multi</graphicClass>
+                            <drawSize>1.7</drawSize>
+                            <shaderType>MoteGlow</shaderType>
+                        </graphicData>
+                        <offsets>
+                            <li>(0.3, 1.6, -0.55)</li> <!-- North -->
+                            <li>(-0.5, 1.1, -0.35)</li> <!-- East -->
+                            <li>(0.3, -1.6, 0.65)</li> <!-- South -->
+                            <li>(0.5, 1.1, -0.35)</li> <!-- West -->
+                        </offsets>
+                        <onlyRenderWhenDrafted>true</onlyRenderWhenDrafted>
+                    </li>
+                </additionalGraphics>
+            </li>
+        </comps>
+    </HediffDef>
+    <!--Kekvit Def-->
+    <HediffDef>
+        <defName>Taggerung_KekvitHaunt</defName>
+        <label>Harassed by Kekvit</label>
+        <description>After some terrible deeds, this person has attracted the spirit of Kekvit the Gingerbread haunt.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.1,0.2,0.8)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <label>presence</label>
+                <statFactors>
+                    <painFactor>0.5</painFactor>
+                    <IncomingDamageFactor>0.8</IncomingDamageFactor>
+                    <SlaveSuppressionOffset>0.15</SlaveSuppressionOffset>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+            <li Class="AthenaFramework.HediffCompProperties_Renderable">
+                <additionalGraphics>
+                    <li Class="AthenaFramework.HediffGraphicPackage">
+                        <graphicData>
+                            <texPath>Haunts/Kekvit/Kekvit</texPath>
+                            <graphicClass>Graphic_Multi</graphicClass>
+                            <drawSize>1.7</drawSize>
+                            <shaderType>MoteGlow</shaderType>
+                        </graphicData>
+                        <offsets>
+                            <li>(0.3, 1.6, -0.55)</li> <!-- North -->
+                            <li>(-0.5, 1.1, -0.35)</li> <!-- East -->
+                            <li>(0.3, -1.6, 0.65)</li> <!-- South -->
+                            <li>(0.5, 1.1, -0.35)</li> <!-- West -->
+                        </offsets>
+                        <onlyRenderWhenDrafted>true</onlyRenderWhenDrafted>
+                    </li>
+                </additionalGraphics>
+            </li>
+        </comps>
+    </HediffDef>
+    <!--Haunt Defs End-->
     <AbilityGroupDef>
         <defName>Taggerung_Stand</defName>
         <cooldownTicks>180</cooldownTicks>
