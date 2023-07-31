@@ -132,6 +132,47 @@
             </li>
         </comps>
     </HediffDef>
+    <!--Oskar Def-->
+    <HediffDef>
+        <defName>Taggerung_OskarHaunt</defName>
+        <label>Disturbed by Oskar</label>
+        <description>The spirit of a crestfallen highmate stalks this person.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.1,0.2,0.8)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <label>presence</label>
+                <statFactors>
+                    <WorkSpeedGlobal>0.3</WorkSpeedGlobal>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+            <li Class="AthenaFramework.HediffCompProperties_Renderable">
+                <additionalGraphics>
+                    <li Class="AthenaFramework.HediffGraphicPackage">
+                        <graphicData>
+                            <texPath>Haunts/Oskar/Oskar</texPath>
+                            <graphicClass>Graphic_Multi</graphicClass>
+                            <drawSize>1.7</drawSize>
+                            <shaderType>MoteGlow</shaderType>
+                        </graphicData>
+                        <offsets>
+                            <li>(0.3, 1.6, -0.55)</li> <!-- North -->
+                            <li>(-0.5, 1.1, -0.35)</li> <!-- East -->
+                            <li>(0.3, -1.6, 0.65)</li> <!-- South -->
+                            <li>(0.5, 1.1, -0.35)</li> <!-- West -->
+                        </offsets>
+                        <onlyRenderWhenDrafted>true</onlyRenderWhenDrafted>
+                    </li>
+                </additionalGraphics>
+            </li>
+        </comps>
+    </HediffDef>
     <!--Haunt Defs End-->
     <AbilityGroupDef>
         <defName>Taggerung_Stand</defName>
