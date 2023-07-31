@@ -103,10 +103,11 @@
             <li>
                 <minSeverity>0</minSeverity>
                 <label>presence</label>
+                <painFactor>0.5</painFactor>
                 <statFactors>
-                    <painFactor>0.5</painFactor>
                     <IncomingDamageFactor>0.8</IncomingDamageFactor>
                     <SlaveSuppressionOffset>0.15</SlaveSuppressionOffset>
+                    <Flammability>0.6</Flammability>
                 </statFactors>
             </li>
         </stages>
@@ -135,7 +136,7 @@
     <!--Oskar Def-->
     <HediffDef>
         <defName>Taggerung_OskarHaunt</defName>
-        <label>Disturbed by Oskar</label>
+        <label>Nuzzled by Oskar</label>
         <description>The spirit of a crestfallen highmate stalks this person.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.1,0.2,0.8)</defaultLabelColor>
@@ -145,10 +146,50 @@
         <stages>
             <li>
                 <minSeverity>0</minSeverity>
-                <label>presence</label>
+                <label>disturbed</label>
                 <statFactors>
-                    <WorkSpeedGlobal>0.3</WorkSpeedGlobal>
+                    <WorkSpeedGlobal>0.420</WorkSpeedGlobal>
+                    <NegotiationAbility>0.420</NegotiationAbility>
+                    <DrugSellPriceImprovement>1.420</DrugSellPriceImprovement>
+                    <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.420</ToxicEnvironmentResistance>
+                    <PawnBeauty>1.69</PawnBeauty>
+                    <SocialImpact>0.69</SocialImpact>
+                    <DeepDrillingSpeed>1.69</DeepDrillingSpeed>
+                    <MentalBreakThreshold>1.69</MentalBreakThreshold>
+                    <Fertility MayRequire="Ludeon.RimWorld.Biotech">1.69</Fertility>
                 </statFactors>
+                <statOffsets>
+                    <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+                    <MeleeHitChance>-0.420</MeleeHitChance>
+                    <MeleeDodgeChance>-0.420</MeleeDodgeChance>
+                    <AimingDelayFactor>0.0420</AimingDelayFactor>
+                    <MoveSpeed>-0.0420</MoveSpeed>
+                    <RestFallRateFactor>-0.069</RestFallRateFactor>
+                    <PsychicSensitivity>0.0420</PsychicSensitivity>
+                    <RestRateMultiplier>0.069</RestRateMultiplier>
+                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">-0.0420</MeditationFocusGain>
+                    <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">0.420</PsychicEntropyMax>
+                    <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.420</PsychicEntropyRecoveryRate>
+                </statOffsets>
+
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.069</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.069</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.0420</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.0420</offset>
+                    </li>
+                </capMods>
             </li>
         </stages>
         <comps>
@@ -177,7 +218,7 @@
     <AbilityGroupDef>
         <defName>Taggerung_Stand</defName>
         <cooldownTicks>180</cooldownTicks>
-        <ritualRoleIds />
+        <ritualRoleIds/>
     </AbilityGroupDef>
 
     <AbilityDef ParentName="PsycastBase">
@@ -220,7 +261,7 @@
 
         <warmupMoteSocialSymbol>UI/Abilities/BerserkTrance</warmupMoteSocialSymbol>
         <comps>
-            <li Class = "CompProperties_AbilityGiveHediff">
+            <li Class="CompProperties_AbilityGiveHediff">
                 <compClass>CompAbilityEffect_GiveHediff</compClass>
                 <hediffDef>Taggerung_FrogHaunt</hediffDef>
                 <psychic>True</psychic>
@@ -271,7 +312,7 @@
 
         <warmupMoteSocialSymbol>UI/Abilities/BerserkTrance</warmupMoteSocialSymbol>
         <comps>
-            <li Class = "CompProperties_AbilityRemoveHediff">
+            <li Class="CompProperties_AbilityRemoveHediff">
                 <compClass>CompAbilityEffect_RemoveHediff</compClass>
                 <hediffDef>Taggerung_FrogHaunt</hediffDef>
                 <applyToSelf>true</applyToSelf>
