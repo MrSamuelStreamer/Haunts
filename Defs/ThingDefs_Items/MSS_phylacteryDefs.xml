@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef ParentName="DrugBase">
-        <defName>Taggerung_Phylactery_Grignr</defName>
+        <defName>MSS_Phylactery_Grignr</defName>
         <label>Grignr's Phylactery</label>
         <description>Horf this down and gain big man</description>
         <descriptionHyperlinks>
@@ -30,7 +30,7 @@
         <ingestible>
             <foodType>Fluid, Processed</foodType>
             <nurseable>true</nurseable>
-            <drugCategory>Medical</drugCategory>
+            <drugCategory>None</drugCategory>
             <ingestSound>Ingest_Beer</ingestSound>
             <ingestHoldOffsetStanding>
                 <northDefault>
