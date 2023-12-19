@@ -277,13 +277,11 @@ Among those he left behind were the amiable vampires, led by the illustrious Ann
             <li>
                 <minSeverity>0</minSeverity>
                 <label>petty</label>
+                <hungerRateFactor>1.5</hungerRateFactor>
                 <statFactors>
                     <Mass>2.5</Mass>
                     <MeleeDamageFactor>2.5</MeleeDamageFactor>
                 </statFactors>
-                <statOffsets>
-                    <HungerRateMultiplier>0.5</HungerRateMultiplier>
-                </statOffsets>
             </li>
         </stages>
         <comps>
