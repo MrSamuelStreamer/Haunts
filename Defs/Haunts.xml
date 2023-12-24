@@ -137,7 +137,11 @@
     <HediffDef>
         <defName>Taggerung_OskarHaunt</defName>
         <label>Nuzzled by Oskar</label>
-        <description>The spirit of a crestfallen highmate stalks this person.</description>
+        <description>Amidst the boundless expanse of a cosmic symphony, where resplendent stars illuminate the celestial stage and grand civilizations grace the universe's opulent canvas, emerges the haunting tale of Oskar, a bewitching apparition born from the enigmatic race of "Highmates." Ingeniously fashioned to embody the very essence of genuine intimacy, these ethereal beings were gifted to illustrious nobles within a futuristic, feudal society, their exquisite allure destined to intertwine with the destinies of the privileged elite.
+
+Yet, Oskar, a peerless enigma among his spectral brethren, bore within his radiant facade a heart-rending chronicle of triumph and tragedy, forever etching his name upon the cosmos in a tapestry of resounding infamy. For, as cosmic tempests of darkness and brilliance clashed in a cataclysmic ballet, the enigmatic Highmate made a fateful choice that seared his soul: fleeing from the haunting specter of space pirates, he abandoned his fellow companions to the inferno's embrace, casting himself adrift amidst the endless expanse in search of solace and redemption.
+
+Among those he left behind were the amiable vampires, led by the illustrious Anne Guine, whose somber grace and dark elegance were eclipsed by her seething anger and heartache as she beheld Oskar abandoning them in their hour of dire need. A bond, once formed in the celestial twilight of mutual understanding and acceptance, was shattered like stars colliding, leaving Anne Guine and her kin in a state of melancholic loss, their trust betrayed, and their sanctuary ablaze in the wake of Oskar's departure.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.1,0.2,0.8)</defaultLabelColor>
         <maxSeverity>1.0</maxSeverity>
@@ -200,6 +204,94 @@
                             <texPath>Haunts/Oskar/Oskar</texPath>
                             <graphicClass>Graphic_Multi</graphicClass>
                             <drawSize>1.7</drawSize>
+                            <shaderType>MoteGlow</shaderType>
+                        </graphicData>
+                        <offsets>
+                            <li>(0.3, 1.6, -0.55)</li> <!-- North -->
+                            <li>(-0.5, 1.1, -0.35)</li> <!-- East -->
+                            <li>(0.3, -1.6, 0.65)</li> <!-- South -->
+                            <li>(0.5, 1.1, -0.35)</li> <!-- West -->
+                        </offsets>
+                        <onlyRenderWhenDrafted>true</onlyRenderWhenDrafted>
+                    </li>
+                </additionalGraphics>
+            </li>
+        </comps>
+    </HediffDef>
+    <!--Phil Def-->
+    <HediffDef>
+        <defName>Taggerung_PhilHaunt</defName>
+        <label>Tormented by Phil</label>
+        <description>This pawn is tormented by the spirit of Phil, the doctor in disguise, and embodiment of betrayal.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.1,0.2,0.8)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <label>petty</label>
+                <statFactors>
+                    <WorkSpeedGlobal>0.9</WorkSpeedGlobal>
+                    <SocialImpact>0.9</SocialImpact>
+                    <Fertility MayRequire="Ludeon.RimWorld.Biotech">0.2</Fertility>
+                </statFactors>
+                <statOffsets>
+                    <RestRateMultiplier>-0.1</RestRateMultiplier>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="AthenaFramework.HediffCompProperties_Renderable">
+                <additionalGraphics>
+                    <li Class="AthenaFramework.HediffGraphicPackage">
+                        <graphicData>
+                            <texPath>Haunts/Phil/Phil</texPath>
+                            <graphicClass>Graphic_Multi</graphicClass>
+                            <drawSize>1.7</drawSize>
+                            <shaderType>MoteGlow</shaderType>
+                        </graphicData>
+                        <offsets>
+                            <li>(0.3, 1.6, -0.55)</li> <!-- North -->
+                            <li>(-0.5, 1.1, -0.35)</li> <!-- East -->
+                            <li>(0.3, -1.6, 0.65)</li> <!-- South -->
+                            <li>(0.5, 1.1, -0.35)</li> <!-- West -->
+                        </offsets>
+                        <onlyRenderWhenDrafted>true</onlyRenderWhenDrafted>
+                    </li>
+                </additionalGraphics>
+            </li>
+        </comps>
+    </HediffDef>
+    <HediffDef>
+        <defName>Taggerung_JadeHaunt</defName>
+        <label>Tormented by Jade</label>
+        <description>This pawn is perterbed by the spirit of Jade, enormous abominable yeti, slain by Santa.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.1,0.2,0.8)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <label>petty</label>
+                <hungerRateFactor>1.5</hungerRateFactor>
+                <statFactors>
+                    <Mass>2.5</Mass>
+                    <MeleeDamageFactor>2.5</MeleeDamageFactor>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+            <li Class="AthenaFramework.HediffCompProperties_Renderable">
+                <additionalGraphics>
+                    <li Class="AthenaFramework.HediffGraphicPackage">
+                        <graphicData>
+                            <texPath>Haunts/Jade/Jade</texPath>
+                            <graphicClass>Graphic_Multi</graphicClass>
+                            <drawSize>2.5</drawSize>
                             <shaderType>MoteGlow</shaderType>
                         </graphicData>
                         <offsets>
