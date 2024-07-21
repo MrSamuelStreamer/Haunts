@@ -29,5 +29,6 @@
         <li>Ludeon.Rimworld.Ideology</li>
         <li>brrainz.harmony</li>
         <li>smartkar.athenaframework</li>
+        <li>seti.victor.animabodies</li>
     </loadAfter>
 </ModMetaData>
